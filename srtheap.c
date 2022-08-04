@@ -2,7 +2,8 @@
 #include <string.h>
 #include "srt.h"
 
-void srtheap(void * base, size_t nelem, size_t size, int(*compar)(const void *, const void *)) {
+void srtheap(void * base, size_t nelem, size_t size, int(*compar)(const void *, const void *)) 
+{
     int i;
     void *temporary;
     temporary = malloc(size);
